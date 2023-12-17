@@ -1,0 +1,19 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+:root {
+    --background: #282C33;
+}
+
+* {
+  font-family: "Fira Code", monospace;
+}
+
+body {
+  background-color: var(--background);
+}
