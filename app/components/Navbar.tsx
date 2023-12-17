@@ -11,13 +11,13 @@ const Navbar = () => {
   return (
     <div>
       <nav>
-        <div className="px-20 top-0 flex mt-2 flex-wrap items-center justify-between mx-auto p-4 fixed w-full">
+        <div className="px-32 top-0 flex mt-2 flex-wrap items-center justify-between mx-auto p-4 fixed w-full">
           <a
             href="https://flowbite.com/"
             className="flex items-center space-x-3 rtl:space-x-reverse">
             <img src="/svg/logo.svg" alt="" className="h-5" />
             <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">
-              Petra
+              Petra Juliansen
             </span>
           </a>
           <button
@@ -44,7 +44,7 @@ const Navbar = () => {
           </button>
 
           <div className="hidden w-full md:block md:w-auto" id="navbar-default">
-            <ul className="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100   -lg md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0">
+            <ul className="font-medium flex flex-col p-4 md:p-0 mt-4 border gap-6 border-gray-100 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0">
               <li>
                 <a
                   href="#"
