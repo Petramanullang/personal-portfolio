@@ -12,7 +12,7 @@ const HeroSection = () => {
   return (
     <>
       <div>
-        <section className="mt-16 text-white">
+        <section className="mt-28 text-white">
           <div className="container flex flex-col justify-center mx-auto sm:py-12 lg:py-24 lg:flex-row lg:justify-between">
             <div className="flex flex-col justify text-center rounded-sm lg:max-w-3xl xl:max-w-3xl lg:text-left">
               <h1 className="mb-2">Hi there</h1>
