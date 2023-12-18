@@ -1,17 +1,34 @@
 "use client";
-import React, { useState } from "react";
+import { log } from "console";
+import React, { useState, useEffect } from "react";
 
 const Navbar = () => {
   const [activeLink, setActiveLink] = useState("home");
+  const [scrollPosition, setScrollPosition] = useState(0);
 
   const handleClick = (link: string) => {
     setActiveLink(link);
   };
 
+  const handleScroll = () => {
+    const position = window.pageYOffset;
+    setScrollPosition(position);
+  };
+  
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll, { passive: true });
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
     <div>
       <nav>
-        <div className="px-32 top-0 flex mt-2 flex-wrap items-center justify-between mx-auto p-4 fixed w-full">
+        <div
+          className={`px-32 top-0 bg-background flex flex-wrap items-center justify-between mx-auto p-4 fixed w-full ${
+            scrollPosition > 50 ? "shadow-lg" : ""
+          }`}>
           <a
             href="https://flowbite.com/"
             className="flex items-center space-x-3 rtl:space-x-reverse">
