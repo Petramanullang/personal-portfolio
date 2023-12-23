@@ -5,24 +5,27 @@ interface CardProps {
   imageUrl: string;
   title: string;
   description: string;
+  tools: string[];
 }
 
-const Card: React.FC<CardProps> = ({ imageUrl, title, description }) => {
+const Card: React.FC<CardProps> = ({ imageUrl, title, description, tools }) => {
   return (
     <div className="flex flex-warp">
-      <div className="overflow-hidden shadow-lg border hover:shadow-2xl h-90 w-60 md:w-80">
+      <div className="overflow-hidden shadow-lg border mt-5 hover:shadow-2xl h-90 w-60 md:w-80">
         <img
           alt="blog photo"
           src={imageUrl}
           className="max-h-36 w-full object-cover border"
         />
-        <div className="flex flex-wrap justify-starts items-center py-3 border-b-2 text-xs text-white font-medium">
-          <span className="text-white bg-white bg-opacity-50 m-1 px-2 py-1 rounded border backdrop-blur-xl">
-            NextJS
-          </span>
-          <span className="text-white bg-white bg-opacity-50 m-1 px-2 py-1 rounded border backdrop-blur-xl">
-            Tailwind
-          </span>
+        <div className="flex">
+          {tools.map((tool, i) => (
+            <img
+              key={i}
+              src={tool}
+              alt={`Tool ${i}`}
+              className="w-10 h-10 mr-2"
+            />
+          ))}
         </div>
         <div className="bg-transparent w-full p-4">
           <p className="text-white text-2xl font-medium">{title}</p>

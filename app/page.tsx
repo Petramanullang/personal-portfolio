@@ -11,7 +11,7 @@ export default function Home() {
       <div className="flex flex-col px-28 justify-center item-center">
         <HeroSection />
         <ProjectSection />
-        <SkillsSection />
+        {/* <SkillsSection /> */}
       </div>
     </>
   );

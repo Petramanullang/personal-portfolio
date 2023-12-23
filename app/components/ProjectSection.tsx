@@ -6,7 +6,7 @@ const ProjectSection = () => {
   return (
     <>
       <div id="project">
-        <div className="relative mt-44 mb-16 flex justify-between items-center">
+        <div className="relative mt-44 mb-5 flex justify-between items-center">
           <span className="relative text-white flex items-center text-3xl">
             <span className="text-primary">#</span>project
             <span className="after:absolute after:inline-block after:border-t-2 after:border-solid after:border-primary after:w-[700px] after:ml-3" />
