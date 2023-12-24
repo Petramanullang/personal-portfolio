@@ -34,11 +34,11 @@ const HeroSection = () => {
                 </a>
               </div>
             </div>
-            <div className="flex items-center justify-center mt-14 lg:mt-0 h-72 sm:h-80 lg:h-96 xl:h-112 2xl:h-128">
+            <div className="flex items-center justify-center lg:mt-0 h-96 lg:h-96">
               <Image
                 src="/img/img.png"
                 alt="Hero Section Image"
-                className="object-cover bg-primary h-72 sm:h-80 lg:h-[480px]"
+                className="object-cover bg-primary h-80 lg:h-[480px]"
                 style={{ borderRadius: "39% 61% 61% 39% / 41% 49% 51% 59% " }}
                 width={500}
                 height={500}
