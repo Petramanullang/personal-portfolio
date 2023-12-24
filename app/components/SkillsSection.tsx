@@ -1,5 +1,7 @@
 "use client";
 import React, { useState } from "react";
+import Image from "next/image";
+
 import {
   Tabs,
   TabsHeader,
@@ -7,7 +9,6 @@ import {
   Tab,
   TabPanel,
 } from "@material-tailwind/react";
-import Image from "next/image";
 
 const SkillsSection = () => {
   const [activeTab, setActiveTab] = useState("Tech Stack");
@@ -144,7 +145,8 @@ const SkillsSection = () => {
                             src={imageUrl}
                             alt={value}
                             className="shadow-xl mb-2 rounded- mx-auto object-contain h-14 p-2 hover:-translate-y-1 hover:duration-300 hover:ease-in-out transition-transform cursor-pointer"
-                            width={500} height={500}
+                            width={500}
+                            height={500}
                           />
                         )}
                         <p className="text-center mb-2 text-white font-bold text-lg">
