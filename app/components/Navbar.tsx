@@ -2,7 +2,7 @@
 import React, { useState, useEffect } from "react";
 import Image from "next/image";
 
-const page = () => {
+const Navbar = () => {
   const [isNavOpen, setIsNavOpen] = useState(false);
   const [activeLink, setActiveLink] = useState("home");
   const [scrollPosition, setScrollPosition] = useState(0);
@@ -143,4 +143,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Navbar;
