@@ -1,4 +1,5 @@
 "use client";
+import Image from "next/image";
 import React, { useState, useEffect } from "react";
 
 const Navbar = () => {
@@ -39,7 +40,7 @@ const Navbar = () => {
           <a
             href="https://flowbite.com/"
             className="flex items-center space-x-3 rtl:space-x-reverse">
-            <img src="/svg/logo.svg" alt="" className="h-5" />
+            <Image src="/svg/logo.svg" alt="" className="h-5" />
             <span className="self-center text-2xl font-semibold whitespace-nowrap text-white">
               Petra Juliansen
             </span>

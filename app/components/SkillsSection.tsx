@@ -7,6 +7,7 @@ import {
   Tab,
   TabPanel,
 } from "@material-tailwind/react";
+import Image from "next/image";
 
 const SkillsSection = () => {
   const [activeTab, setActiveTab] = useState("Tech Stack");
@@ -96,7 +97,9 @@ const SkillsSection = () => {
 
   return (
     <>
-      <div className="relative mt-44 mb-16 flex justify-between items-center" id="skills">
+      <div
+        className="relative mt-44 mb-16 flex justify-between items-center"
+        id="skills">
         <span className="relative text-white flex items-center text-3xl">
           <span className="text-primary">#</span>Skills
           <span className="after:absolute after:inline-block after:border-t-2 after:border-solid after:border-primary after:w-[400px] after:ml-3" />
@@ -137,7 +140,7 @@ const SkillsSection = () => {
                     ({ value, imageUrl, level }, index) => (
                       <div key={index}>
                         {imageUrl && (
-                          <img
+                          <Image
                             src={imageUrl}
                             alt={value}
                             className="shadow-xl mb-2 rounded- mx-auto object-contain h-14 p-2 hover:-translate-y-1 hover:duration-300 hover:ease-in-out transition-transform cursor-pointer"
@@ -162,7 +165,7 @@ const SkillsSection = () => {
             Tech Stack And Tools
           </p>
           <p className="text-base text-white mt-3 w-64 text-center mx-auto">
-            There are some tech stack and tools that i've learned and
+            There are some tech stack and tools that I&lsquo;ve learned and
             experienced
           </p>
         </div>

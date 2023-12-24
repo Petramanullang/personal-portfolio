@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 
@@ -12,14 +13,14 @@ const Card: React.FC<CardProps> = ({ imageUrl, title, description, tools }) => {
   return (
     <div className="flex flex-warp">
       <div className="overflow-hidden shadow-lg border mt-5 hover:shadow-2xl h-90 w-60 md:w-80">
-        <img
+        <Image
           alt="blog photo"
           src={imageUrl}
           className="max-h-36 w-full object-cover border"
         />
         <div className="flex">
           {tools.map((tool, i) => (
-            <img
+            <Image
               key={i}
               src={tool}
               alt={`Tool ${i}`}

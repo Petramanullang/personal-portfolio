@@ -1,5 +1,6 @@
 "use client";
 import React, { useState } from "react";
+import Image from "next/image";
 import { useTypewriter, Cursor } from "react-simple-typewriter";
 
 const HeroSection = () => {
@@ -34,7 +35,7 @@ const HeroSection = () => {
               </div>
             </div>
             <div className="flex items-center justify-center mt-8 lg:mt-0 h-72 sm:h-80 lg:h-96 xl:h-112 2xl:h-128">
-              <img
+              <Image
                 src="/img/img.png"
                 alt="Hero Section Image"
                 className="object-contain bg-primary h-72 sm:h-80 lg:h-[480px] xl:h-112 2xl:h-128 rounded-3xl"
