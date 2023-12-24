@@ -40,6 +40,8 @@ const HeroSection = () => {
                 alt="Hero Section Image"
                 className="object-contain bg-primary h-72 sm:h-80 lg:h-[480px] xl:h-112 2xl:h-128 rounded-3xl"
                 style={{ borderRadius: "30% 70% 48% 52% / 43% 42% 58% 57% " }}
+                width={500}
+                height={500}
               />
             </div>
           </div>

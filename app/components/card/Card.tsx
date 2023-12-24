@@ -17,6 +17,7 @@ const Card: React.FC<CardProps> = ({ imageUrl, title, description, tools }) => {
           alt="blog photo"
           src={imageUrl}
           className="max-h-36 w-full object-cover border"
+          width={500} height={500}
         />
         <div className="flex">
           {tools.map((tool, i) => (

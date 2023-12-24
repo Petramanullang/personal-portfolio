@@ -106,7 +106,7 @@ const SkillsSection = () => {
         </span>
       </div>
       <div className="flex justify-between">
-        <div className="w-2/3 border mb-36">
+        <div className="w-2/3 border h-[450px] mb-36">
           <Tabs value={activeTab}>
             <TabsHeader
               placeholder={""}
@@ -144,6 +144,7 @@ const SkillsSection = () => {
                             src={imageUrl}
                             alt={value}
                             className="shadow-xl mb-2 rounded- mx-auto object-contain h-14 p-2 hover:-translate-y-1 hover:duration-300 hover:ease-in-out transition-transform cursor-pointer"
+                            width={500} height={500}
                           />
                         )}
                         <p className="text-center mb-2 text-white font-bold text-lg">

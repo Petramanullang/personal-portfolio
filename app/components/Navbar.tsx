@@ -40,7 +40,7 @@ const Navbar = () => {
           <a
             href="https://flowbite.com/"
             className="flex items-center space-x-3 rtl:space-x-reverse">
-            <Image src="/svg/logo.svg" alt="" className="h-5" />
+            <Image src="/svg/logo.svg" alt="" className="h-5" width={20} height={20} />
             <span className="self-center text-2xl font-semibold whitespace-nowrap text-white">
               Petra Juliansen
             </span>
