@@ -1,5 +1,4 @@
 "use client";
-import { log } from "console";
 import React, { useState, useEffect } from "react";
 
 const Navbar = () => {
@@ -8,13 +7,21 @@ const Navbar = () => {
 
   const handleClick = (link: string) => {
     setActiveLink(link);
+
+    // Cari elemen dengan ID yang sesuai
+    const targetElement = document.getElementById(link);
+
+    // Lakukan smooth scroll ke elemen yang dituju
+    if (targetElement) {
+      targetElement.scrollIntoView({ behavior: "smooth" });
+    }
   };
 
   const handleScroll = () => {
     const position = window.pageYOffset;
     setScrollPosition(position);
   };
-  
+
   useEffect(() => {
     window.addEventListener("scroll", handleScroll, { passive: true });
     return () => {
