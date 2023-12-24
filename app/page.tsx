@@ -8,7 +8,7 @@ export default function Home() {
   return (
     <>
       <Navbar />
-      <div className="flex flex-col px-14 md:px-28 justify-center item-center scroll-smooth">
+      <div className="flex flex-col px-8 md:px-28 justify-center item-center scroll-smooth">
         <HeroSection />
         <ProjectSection />
         <SkillsSection />
