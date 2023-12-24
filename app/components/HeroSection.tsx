@@ -5,7 +5,7 @@ import { useTypewriter, Cursor } from "react-simple-typewriter";
 
 const HeroSection = () => {
   const [text] = useTypewriter({
-    words: ["Web Developer", "Front-end Developer"],
+    words: ["Web Developer", "Frontend Developer"],
     loop: true,
     delaySpeed: 3000,
   });
@@ -17,11 +17,11 @@ const HeroSection = () => {
           <div className="container flex flex-col justify-center mx-auto sm:py-12 lg:py-24 lg:flex-row lg:justify-between">
             <div className="flex flex-col justify text-center rounded-sm lg:max-w-3xl xl:max-w-3xl lg:text-left">
               <h1 className="mb-2">Hi there</h1>
-              <h1 className="text-4xl font-bold h-20">
+              <h1 className="text-2xl md:text-4xl font-bold h-16 md:h-20">
                 Petra here and im a <br />
-                <span className="text-primary">{text}</span>
+                <span className="text-primary text-2xl ">{text}</span>
               </h1>
-              <p className="mt-4 mb-8 text-lg max-w-xl sm:mb-12">
+              <p className="mt-4 mb-8 text-sm md:text-lg max-w-xl sm:mb-12">
                 I create responsive websites where technology meets creativity
                 and my ambition is to become a fullstack developer.
               </p>
@@ -38,10 +38,11 @@ const HeroSection = () => {
               <Image
                 src="/img/img.png"
                 alt="Hero Section Image"
-                className="object-contain bg-primary h-72 sm:h-80 lg:h-[480px] xl:h-112 2xl:h-128 rounded-3xl"
+                className="object-cover bg-primary h-72 sm:h-80 lg:h-[480px]"
                 style={{ borderRadius: "30% 70% 48% 52% / 43% 42% 58% 57% " }}
                 width={500}
                 height={500}
+                priority
               />
             </div>
           </div>

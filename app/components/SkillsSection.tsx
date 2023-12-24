@@ -97,7 +97,7 @@ const SkillsSection = () => {
   };
 
   return (
-    <>
+    <div className="hidden md:block">
       <div
         className="relative mt-44 mb-16 flex justify-between items-center"
         id="skills">
@@ -173,7 +173,7 @@ const SkillsSection = () => {
           </p>
         </div>
       </div>
-    </>
+    </div>
   );
 };
 

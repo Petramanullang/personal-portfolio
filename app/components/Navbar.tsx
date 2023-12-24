@@ -2,7 +2,7 @@
 import React, { useState, useEffect } from "react";
 import Image from "next/image";
 
-const Navbar = () => {
+const page = () => {
   const [isNavOpen, setIsNavOpen] = useState(false);
   const [activeLink, setActiveLink] = useState("home");
   const [scrollPosition, setScrollPosition] = useState(0);
@@ -13,7 +13,9 @@ const Navbar = () => {
 
   const handleClick = (link: string) => {
     setActiveLink(link);
+
     const targetElement = document.getElementById(link);
+
     if (targetElement) {
       targetElement.scrollIntoView({ behavior: "smooth" });
     }
@@ -33,11 +35,11 @@ const Navbar = () => {
   }, []);
 
   return (
-    <div className="fixed w-full z-50">
-      <nav className="bg-white border-gray-200 dark:bg-gray-900">
+    <div>
+      <nav className="">
         {/* max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4 */}
         <div
-          className={`bg-background top-0  max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4 ${
+          className={`md:px-32 top-0 z-50 bg-background flex flex-wrap items-center justify-between mx-auto p-4 fixed w-full ${
             scrollPosition > 50 ? "shadow-lg" : ""
           }`}>
           <a
@@ -78,15 +80,15 @@ const Navbar = () => {
             </svg>
           </button>
           <div
-            className={`h-[100vh] w-full md:block md:w-auto ${
+            className={`h-[100vh] md:h-0 w-full md:block md:w-auto ${
               isNavOpen ? "block" : "hidden"
             }`}
             id="navbar-default">
-            <ul className="font-medium text-center flex justify-center flex-col p-4 md:p-0 mt-4 gap-4 md:gap-6 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0">
+            <ul className="font-medium text-center flex flex-col p-4 md:p-0 mt-4  gap-6  md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0">
               <li>
                 <a
                   href="#"
-                  className={`block text-[#ABB2BF] text-2xl md:text-base py-2 px-3 md:p-0 focus:text-white ${
+                  className={`block text-[#ABB2BF] text-base py-2 px-3 md:p-0 focus:text-white ${
                     activeLink === "home" ? "text-white" : ""
                   }`}
                   onClick={() => handleClick("home")}>
@@ -96,7 +98,7 @@ const Navbar = () => {
               <li>
                 <a
                   href="#project"
-                  className={`block text-[#ABB2BF] text-2xl md:text-base py-2 px-3 md:p-0 ${
+                  className={`block text-[#ABB2BF] text-base py-2 px-3 md:p-0 ${
                     activeLink === "project" ? "text-white" : ""
                   }`}
                   onClick={() => handleClick("project")}>
@@ -106,7 +108,7 @@ const Navbar = () => {
               <li>
                 <a
                   href="#skills"
-                  className={`block text-[#ABB2BF] text-2xl md:text-base py-2 px-3 md:p-0 focus:text-white ${
+                  className={`block text-[#ABB2BF] text-base py-2 px-3 md:p-0 focus:text-white ${
                     activeLink === "skills" ? "text-white" : ""
                   }`}
                   onClick={() => handleClick("skills")}>
@@ -116,7 +118,7 @@ const Navbar = () => {
               <li>
                 <a
                   href="#about"
-                  className={`block text-[#ABB2BF] text-2xl md:text-base py-2 px-3 md:p-0 ${
+                  className={`block text-[#ABB2BF] text-base py-2 px-3 md:p-0 ${
                     activeLink === "about" ? "text-white" : ""
                   }`}
                   onClick={() => handleClick("about")}>
@@ -126,7 +128,7 @@ const Navbar = () => {
               <li>
                 <a
                   href="#contact"
-                  className={`block text-[#ABB2BF] text-2xl md:text-base py-2 px-3 md:p-0 ${
+                  className={`block text-[#ABB2BF] text-base py-2 px-3 md:p-0 ${
                     activeLink === "contact" ? "text-white" : ""
                   }`}
                   onClick={() => handleClick("contact")}>
@@ -141,4 +143,4 @@ const Navbar = () => {
   );
 };
 
-export default Navbar;
+export default page;

@@ -4,7 +4,7 @@ import CardSection from "./CardSection";
 
 const ProjectSection = () => {
   return (
-    <>
+    <div className="hidden md:flex">
       <div id="project">
         <div className="relative mt-44 mb-5 flex justify-between items-center">
           <span className="relative text-white flex items-center text-3xl">
@@ -19,7 +19,7 @@ const ProjectSection = () => {
         </div>
         <CardSection />
       </div>
-    </>
+    </div>
   );
 };
 
