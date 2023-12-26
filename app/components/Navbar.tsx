@@ -16,9 +16,6 @@ const Navbar = () => {
 
     const targetElement = document.getElementById(link);
 
-    if (targetElement) {
-      targetElement.scrollIntoView({ behavior: "smooth" });
-    }
     setIsNavOpen(false);
   };
 
