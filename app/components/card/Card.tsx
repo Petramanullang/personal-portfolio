@@ -6,17 +6,19 @@ interface CardProps {
   imageUrl: string;
   title: string;
   description: string;
+  preview: string;
+  viewCode: string;
   tools: string[];
 }
 
-const Card: React.FC<CardProps> = ({ imageUrl, title, description, tools }) => {
+const Card: React.FC<CardProps> = ({ imageUrl, title, description, tools, preview, viewCode }) => {
   return (
     <div className="flex flex-warp">
       <div className="overflow-hidden shadow-lg border mt-5 hover:shadow-2xl h-90 w-60 md:w-80">
         <Image
           alt="blog photo"
           src={imageUrl}
-          className="max-h-36 w-full object-cover border"
+          className="max-h-42 w-full object-fill border"
           width={500} height={500}
         />
         <div className="flex">
@@ -35,10 +37,10 @@ const Card: React.FC<CardProps> = ({ imageUrl, title, description, tools }) => {
             <p className="w-full block h-full">{description}</p>
           </div>
           <button className="text-text text-md mt-5 p-1 px-2 border-primary border">
-            <Link href="#project">Preview</Link>
+            <Link href={preview}>Preview</Link>
           </button>
           <button className="text-text text-md mt-5 ml-7 p-1 px-2 border">
-            <Link href="https://github.com/Petramanullang/personal-portfolio">
+            <Link href={viewCode}>
               View Code
             </Link>
           </button>

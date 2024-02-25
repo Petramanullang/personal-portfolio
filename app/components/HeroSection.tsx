@@ -1,4 +1,5 @@
 "use client";
+import Image from "next/image";
 import React, { useState } from "react";
 import { useTypewriter, Cursor } from "react-simple-typewriter";
 
@@ -27,18 +28,21 @@ const HeroSection = () => {
               <div className="flex flex-col space-y-4 sm:items-center sm:justify-center sm:flex-row sm:space-y-0 sm:space-x-4 lg:justify-start">
                 <a
                   rel="noopener noreferrer"
-                  href="#"
+                  href="/pdf/CV_PETRA.pdf"
+                  download="CV_PETRA.pdf"
                   className="px-8 py-3 text-lg font-semibold border dark:border-primary">
-                  Contact me !!
+                  Download CV
                 </a>
               </div>
             </div>
             <div className="flex items-center justify-center lg:mt-0 h-96 lg:h-96">
-              <img
+              <Image
                 src="/img/img.png"
                 alt="Hero Section Image"
                 className="object-cover bg-primary h-80 lg:h-[480px]"
                 style={{ borderRadius: "39% 61% 61% 39% / 41% 49% 51% 59% " }}
+                width={500}
+                height={500}
               />
             </div>
           </div>

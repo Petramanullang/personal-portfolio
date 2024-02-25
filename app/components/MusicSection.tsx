@@ -12,30 +12,38 @@ export const MusicSection = () => {
         </span>
       </div>
       <div className="grid md:grid-cols-3 place-items-center gap-5">
+        {/* things we do */}
         <iframe
           className="h-[352px] shadow-lg"
           src="https://open.spotify.com/embed/track/4GNFje1FDwn2i6NMZSw18w?utm_source=generator"
           allowFullScreen
           allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
           loading="lazy"></iframe>
+        {/* hit the dirt */}
         <iframe
           className="h-[352px] shadow-lg"
           src="https://open.spotify.com/embed/track/2nBJQzBEJh1eMAbks0GA3H?utm_source=generator"
           allowFullScreen
           allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
           loading="lazy"></iframe>
+        {/* Madeyne */}
         <iframe
           className="h-[352px] shadow-lg"
           src="https://open.spotify.com/embed/track/6Zl92xH7GCIf0s3y4oL9xu?utm_source=generator"
           allowFullScreen
           allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
           loading="lazy"></iframe>
+        {/* Crash Course */}
         <iframe
           className="h-[352px] shadow-lg"
           src="https://open.spotify.com/embed/track/75p5bRmvl6VErq5BJrKBOr?utm_source=generator"
           allowFullScreen
           allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
           loading="lazy"></iframe>
+        {/* <audio controls>
+          <source src="/things_we_do.mp3" type="audio/mpeg" />
+          Your browser does not support the audio element.
+        </audio> */}
       </div>
     </>
   );

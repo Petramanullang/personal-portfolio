@@ -112,7 +112,7 @@ const Navbar = () => {
                   <span className="text-primary">#</span>skills
                 </a>
               </li>
-              <li>
+              {/* <li>
                 <a
                   href="#about"
                   className={`block text-[#ABB2BF] text-base py-2 px-3 md:p-0 ${
@@ -131,7 +131,7 @@ const Navbar = () => {
                   onClick={() => handleClick("contact")}>
                   <span className="text-primary">#</span>contact
                 </a>
-              </li>
+              </li> */}
             </ul>
           </div>
         </div>
