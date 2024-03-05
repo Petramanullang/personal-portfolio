@@ -28,8 +28,7 @@ const HeroSection = () => {
               <div className="flex flex-col space-y-4 sm:items-center sm:justify-center sm:flex-row sm:space-y-0 sm:space-x-4 lg:justify-start">
                 <a
                   rel="noopener noreferrer"
-                  href="/pdf/CV_PETRA.pdf"
-                  download="CV_PETRA.pdf"
+                  href="https://drive.google.com/file/d/1bvThhIIBMUI6cN58lXE9nUjVVpcN7wkZ/view"
                   className="px-8 py-3 text-lg font-semibold border dark:border-primary">
                   Download CV
                 </a>
